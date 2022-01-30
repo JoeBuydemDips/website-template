@@ -158,3 +158,25 @@ to the list__item of list--tick */
     padding-left: 0;
   }
 }
+
+/*----------------------------------------------------------*/
+/* Icons */
+.icon {
+  width: 40px;
+  height: 40px;
+}
+
+.icon--primary {
+  /*change color for svg icon*/
+  fill: var(--color-primary);
+}
+
+.icon-container {
+  background: #f3f9fa;
+  width: 64px;
+  height: 64px;
+  border-radius: 100%;
+  display: inline-flex;
+  justify-content: center;
+  align-items: center;
+}
