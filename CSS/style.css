@@ -379,3 +379,21 @@ to the list__item of list--tick */
     font-size: 1.6rem;
   }
 }
+
+/*----------------------------------------------------------*/
+/* Media Object*/
+.media {
+  display: flex;
+}
+
+.media__title {
+  margin-top: 0;
+}
+
+.media__body {
+  margin: 0 2rem;
+}
+
+.media__image {
+  margin-top: 1rem;
+}
