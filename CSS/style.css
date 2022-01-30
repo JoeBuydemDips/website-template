@@ -7,6 +7,13 @@
   --color-body: #918ca4;
 }
 
+/*important to set box-sizing to border-box*/
+*,
+*::after,
+*::before {
+  box-sizing: border-box;
+}
+
 /*----------------------------------------------------------*/
 /* Typography */
 html {
@@ -179,4 +186,73 @@ to the list__item of list--tick */
   display: inline-flex;
   justify-content: center;
   align-items: center;
+}
+
+/*----------------------------------------------------------*/
+/* Buttons */
+.btn {
+  border-radius: 40px;
+  border: 0;
+  cursor: pointer;
+  font-size: 1.8rem;
+  font-weight: 600;
+  margin: 1rem 0;
+  padding: 2rem 3rem;
+  text-align: center;
+  text-transform: uppercase;
+  white-space: nowrap;
+}
+
+/*primary skin*/
+.btn--primary {
+  background: var(--color-primary);
+  color: #fff;
+}
+
+.btn--primary:hover {
+  background: #75acf5;
+}
+
+/*secondary skin*/
+.btn--secondary {
+  background: var(--color-secondary);
+  color: #fff;
+}
+
+.btn--secondary:hover {
+  background: #6ce2f7;
+}
+
+/*accent skin*/
+.btn--accent {
+  background: var(--color-accent);
+  color: #fff;
+}
+
+.btn--accent:hover {
+  background: #ee6948;
+}
+
+/*outline skin*/
+.btn--outline {
+  background: #fff;
+  border: 2px solid var(--color-headings);
+  color: var(--color-headings);
+}
+
+.btn--outline:hover {
+  background: var(--color-headings);
+  color: #fff;
+}
+
+.btn--block {
+  /*wider button: only width changes*/
+  width: 100%;
+  display: inline-block;
+}
+
+@media screen and (min-width: 1024px) {
+  .btn {
+    font-size: 1.5rem;
+  }
 }
