@@ -123,3 +123,38 @@ a {
     font-size: 1.2rem;
   }
 }
+
+/*----------------------------------------------------------*/
+/* Lists */
+.list {
+  /*vertical lists*/
+  list-style: none;
+  padding-left: 0;
+  color: var(--color-headings);
+}
+
+/*Nesting is needed here to only apply padding 
+to the list__item of list--inline */
+.list--inline .list__item {
+  /*horizontal list*/
+  display: inline-block;
+  margin-right: 2rem;
+}
+
+.list--tick {
+  list-style-image: url(../images/tick.svg);
+  padding-left: 3rem;
+}
+
+/*Nesting is needed here to only apply padding 
+to the list__item of list--tick */
+.list--tick .list__item {
+  padding-left: 0.5rem;
+  margin-bottom: 1rem;
+}
+
+@media screen and (min-width: 1024px) {
+  .list--tick .list__item {
+    padding-left: 0;
+  }
+}
