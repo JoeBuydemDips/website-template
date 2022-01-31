@@ -182,6 +182,15 @@ to the list__item of list--tick */
   fill: var(--color-primary);
 }
 
+.icon--small {
+  width: 30px;
+  height: 30px;
+}
+
+.icon--white {
+  fill: #fff;
+}
+
 .icon-container {
   background: #f3f9fa;
   width: 64px;
@@ -190,6 +199,10 @@ to the list__item of list--tick */
   display: inline-flex;
   justify-content: center;
   align-items: center;
+}
+
+.icon-container--accent {
+  background: var(--color-accent);
 }
 
 /*----------------------------------------------------------*/
@@ -464,5 +477,38 @@ to the list__item of list--tick */
 @media screen and (min-width: 1024px) {
   .grid--1x3 {
     grid-template-columns: repeat(3, 1fr);
+  }
+}
+
+/*----------------------------------------------------------*/
+/* Testimonial*/
+.testimonial {
+  padding: 4rem;
+}
+
+.testimonial__image {
+  position: relative;
+}
+
+.testimonial__image > img {
+  /*direct child selector*/
+  width: 100%;
+}
+
+.testimonial__image > .icon-container {
+  /*direct child selector*/
+  position: absolute;
+  top: 3rem;
+  right: -32px;
+}
+
+@media screen and (min-width: 768px) {
+  .testimonial .quote,
+  .testimonial .quote__author {
+    font-size: 2.4rem;
+  }
+
+  .testimonial .quote {
+    margin-left: 6rem;
   }
 }
