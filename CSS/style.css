@@ -642,6 +642,7 @@ to the list__item of list--tick */
 
 .block__header {
   text-align: center;
+  margin-bottom: 4rem;
 }
 
 .block--dark {
