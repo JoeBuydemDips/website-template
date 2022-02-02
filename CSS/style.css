@@ -561,7 +561,6 @@ to the list__item of list--tick */
 .callout {
   padding: 4rem;
   border-radius: 5px;
-  margin: 0 10rem;
 }
 
 .callout--primary {
@@ -840,6 +839,10 @@ to the list__item of list--tick */
     max-width: 700px;
     justify-self: end;
   }
+
+  .block-showcase__content {
+    margin: 0 2rem;
+  }
 }
 
 /*----------------------------------------------------------*/
@@ -916,4 +919,10 @@ to the list__item of list--tick */
   .footer__heading {
     font-size: 2.6rem;
   }
+}
+
+/* Sign-up Callout */
+
+.callout-signup {
+  transform: translateY(5rem);
 }
