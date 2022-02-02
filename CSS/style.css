@@ -220,7 +220,7 @@ to the list__item of list--tick */
   font-size: 1.8rem;
   font-weight: 600;
   margin: 1rem 0;
-  padding: 2rem 3rem;
+  padding: 2rem 4vw;
   text-align: center;
   text-transform: uppercase;
   white-space: nowrap;
@@ -321,6 +321,7 @@ to the list__item of list--tick */
   border: 0;
   flex-grow: 1;
   padding: 1.5rem 2rem;
+  width: 0;
 }
 
 @media screen and (min-width: 1024px) {
@@ -559,6 +560,7 @@ to the list__item of list--tick */
 .callout {
   padding: 4rem;
   border-radius: 5px;
+  margin: 0 10rem;
 }
 
 .callout--primary {
@@ -648,6 +650,10 @@ to the list__item of list--tick */
 .block--dark {
   background: #000;
   color: #7b858b;
+}
+
+.block--dark-half {
+  background: linear-gradient(1800deg, black 50%, white 50%);
 }
 
 .block--dark h1,
@@ -768,8 +774,9 @@ to the list__item of list--tick */
 }
 
 .block-domain__prices {
+  color: var(--color-headings);
   display: grid;
-  grid-template-columns: repeat(3, 1fr);
+  grid-template-columns: repeat(2, 1fr);
   grid-template-rows: (2 6rem);
   font-size: 2rem;
   font-weight: 600;
@@ -837,7 +844,7 @@ to the list__item of list--tick */
 /*----------------------------------------------------------*/
 /* Footer*/
 .footer {
-  background: #232323;
+  background: #000;
 }
 
 .footer a {
