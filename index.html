@@ -13,6 +13,7 @@
       href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap"
       rel="stylesheet"
     />
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
   </head>
   <body>
     <!--Nav Bar-->
@@ -34,17 +35,22 @@
     <!--Hero-->
     <section class="block block--dark block--skewed-left hero">
       <div class="container grid grid--1x2">
-        <header class="block__header hero__content">
+        <header class="block__header hero__content" data-aos="zoom-in">
           <h1 class="block__heading">Cloud Hosting for Pros</h1>
           <p class="hero__tagline">Deploy your websites in less than 60secs</p>
           <a href="#" class="btn btn--accent btn--stretched">Get Started</a>
         </header>
-        <img class="hero__image" src="images/banner.png" alt="" />
+        <img
+          class="hero__image"
+          src="images/banner.png"
+          alt=""
+          data-aos="zoom-in"
+        />
       </div>
     </section>
 
     <!--Domain Block-->
-    <section class="block container block-domain">
+    <section class="block container block-domain" data-aos="fade-up">
       <header class="block__header">
         <h2>Starting at $9/month</h2>
         <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Aut, ab!</p>
@@ -73,7 +79,7 @@
 
     <!--Plans-Block-->
     <!-- ******************Block-Plan ******************************-->
-    <section class="block container block-plans">
+    <section class="block container block-plans" data-aos="fade-up">
       <div class="grid grid--1x3">
         <!-- First Plan ---- ------------------------->
         <div class="plan">
@@ -144,7 +150,7 @@
     <!--*********FEATURES-BLOCK*********************************************-->
     <!--********************************************************************-->
     <section class="block container">
-      <header class="block__header">
+      <header class="block__header" data-aos="fade-up">
         <h2>Host on the Cloud to Keep Growing</h2>
         <p>
           Lorem ipsum dolor sit amet consectetur adipisicing elit. Quo, qui!
@@ -152,7 +158,7 @@
       </header>
       <!--********************Fisrt Feature ******************************-->
       <article class="grid grid--1x2 feature">
-        <div class="feature__content">
+        <div class="feature__content" data-aos="fade-right">
           <!--*** 1x2 of grid ****** -->
           <!--icon-->
           <svg class="icon icon--primary">
@@ -171,7 +177,7 @@
           <a href="#" class="link-arrow">Learn more</a>
         </div>
         <!--*** 2x2 of grid ****** -->
-        <picture
+        <picture data-aos="zoom-in-left"
           ><img class="feature__image" src="images/easy.jpg" alt=""
         /></picture>
       </article>
@@ -179,7 +185,7 @@
       <!--********************Second Feature******************************-->
 
       <article class="grid grid--1x2 feature">
-        <div class="feature__content">
+        <div class="feature__content" data-aos="fade-right">
           <!--*** 1x2 of grid ****** -->
           <!--icon-->
           <svg class="icon icon--primary">
@@ -198,14 +204,14 @@
           <a href="#" class="link-arrow">Learn more</a>
         </div>
         <!--*** 2x2 of grid ****** -->
-        <picture
+        <picture data-aos="zoom-in-left"
           ><img class="feature__image" src="images/fast.jpg" alt=""
         /></picture>
       </article>
       <!--********************Third Feature******************************-->
 
       <article class="grid grid--1x2 feature">
-        <div class="feature__content">
+        <div class="feature__content" data-aos="fade-right">
           <!--*** 1x2 of grid ****** -->
           <!--icon-->
           <svg class="icon icon--primary">
@@ -224,7 +230,7 @@
           <a href="#" class="link-arrow">Learn more</a>
         </div>
         <!--*** 2x2 of grid ****** -->
-        <picture
+        <picture data-aos="zoom-in-left"
           ><img class="feature__image" src="images/wordpress.jpg" alt=""
         /></picture>
       </article>
@@ -232,7 +238,7 @@
       <!--********************Fourth Feature******************************-->
 
       <article class="grid grid--1x2 feature">
-        <div class="feature__content">
+        <div class="feature__content" data-aos="fade-right">
           <!--*** 1x2 of grid ****** -->
           <!--icon-->
           <svg class="icon icon--primary">
@@ -251,7 +257,7 @@
           <a href="#" class="link-arrow">Learn more</a>
         </div>
         <!--*** 2x2 of grid ****** -->
-        <picture
+        <picture data-aos="zoom-in-left"
           ><img class="feature__image" src="images/support.jpg" alt=""
         /></picture>
       </article>
@@ -260,14 +266,19 @@
     <!--********************************************************************-->
 
     <section class="block block--dark block--skewed-right block-showcase">
-      <header class="block__header">
+      <header class="block__header" data-aos="fade-up">
         <h2>User-friendly Control Panel</h2>
       </header>
       <div class="container grid grid--1x2">
-        <img class="block-showcase__image" src="images/ipad.png" alt="" />
+        <img
+          class="block-showcase__image"
+          src="images/ipad.png"
+          alt=""
+          data-aos="fade-right"
+        />
         <ul class="list">
           <li>
-            <div class="media">
+            <div class="media" data-aos="slide-left">
               <div class="media__image">
                 <svg class="icon icon--primary">
                   <use xlink:href="/images/sprite.svg#easy"></use>
@@ -284,7 +295,7 @@
             </div>
           </li>
           <li>
-            <div class="media">
+            <div class="media" data-aos="slide-left">
               <div class="media__image">
                 <svg class="icon icon--primary">
                   <use xlink:href="/images/sprite.svg#growth"></use>
@@ -301,7 +312,7 @@
             </div>
           </li>
           <li>
-            <div class="media">
+            <div class="media" data-aos="slide-left">
               <div class="media__image">
                 <svg class="icon icon--primary">
                   <use xlink:href="/images/sprite.svg#wordpress"></use>
@@ -323,7 +334,7 @@
 
     <!--********************** TESTIMONIAL BLOCK **********************************-->
     <section class="block">
-      <header class="block__header">
+      <header class="block__header" data-aos="fade-up">
         <h2>What our customers are saying...</h2>
         <p>
           Lorem ipsum dolor sit amet consectetur adipisicing elit. Nam deserunt
@@ -334,7 +345,7 @@
       <div class="container">
         <div class="card testimonial">
           <div class="grid grid--1x2">
-            <div class="testimonial__image">
+            <div class="testimonial__image" data-aos="zoom-in">
               <img src="../images/bey.jpeg" alt="A happy customer" />
               <span class="icon-container icon-container--accent">
                 <svg class="icon icon--white icon--small">
@@ -342,9 +353,9 @@
                 </svg>
               </span>
             </div>
-            <blockquote class="quote">
+            <blockquote class="quote" data-aos="slide-left">
               <p class="quote__text">
-                Lorem ipsum dolor sit amet consectetur adipisicing elit. Nobis
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Nobi
                 alias omnis cum explicabo a aliquid odit sapiente quo maiores
                 excepturi illum amet animi, architecto soluta labore ipsa
                 veniam. Temporibus, ullam!
@@ -443,5 +454,9 @@
       </div>
     </footer>
     <script src="js/main.js"></script>
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <script>
+      AOS.init();
+    </script>
   </body>
 </html>
