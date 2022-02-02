@@ -778,7 +778,7 @@ to the list__item of list--tick */
   color: var(--color-headings);
   display: grid;
   grid-template-columns: repeat(2, 1fr);
-  grid-template-rows: (2 6rem);
+  grid-template-rows: (2, 6rem);
   font-size: 2rem;
   font-weight: 600;
   justify-items: center;
